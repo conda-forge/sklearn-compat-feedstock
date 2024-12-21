@@ -1,5 +1,5 @@
 {% set name = "sklearn-compat" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sklearn_compat-{{ version }}.tar.gz
-  sha256: 5e24fef6984c904bec8619bb72dd36257047d117fa9f91bcbb82b451e884d8d0
+  sha256: 3d44b3da781780c1025988f3a97b579b63a02a5413d8ee3250876b657472ff9d
 
 build:
   noarch: python
