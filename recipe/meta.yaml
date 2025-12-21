@@ -1,5 +1,5 @@
 {% set name = "sklearn-compat" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sklearn_compat-{{ version }}.tar.gz
-  sha256: 7c53ccc913090000949a53af8fc5d4a976c1c223f94728dcfde436467c17220e
+  sha256: 1a0c3a2f384100e034def49ee5a6cfe984a826f79d032eb559f10445e012b02c
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - scikit-learn >=1.2,<1.8
+    - scikit-learn >=1.2,<1.9
 
 test:
   imports:
